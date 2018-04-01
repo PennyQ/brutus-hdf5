@@ -12,6 +12,7 @@ matplotlib.rcParams['text.usetex'] = True
 matplotlib.rcParams['text.latex.unicode'] = True
 
 lw_tol_vec = iterate_sim_data_dir()
+print('return lw_tol_vec', lw_tol_vec)
 # txt_to_h5py('./output/per_tstep_e-1_lw_136_tol_24_output_test.txt', 'per_tstep_e-1_lw_136_tol_24_output_test.h5part')
 fig = plt.figure(dpi=200)
 
@@ -39,4 +40,4 @@ plt.ylabel(r'Seperation')
 plt.xlim(0, 100)
 # plt.ylim(-12, 2)
 plt.savefig('separation.pdf')
-h5f.close()
+print('figure saved!')
